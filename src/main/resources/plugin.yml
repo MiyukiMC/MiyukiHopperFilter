@@ -1,0 +1,5 @@
+name: MiyukiHopperFilter
+version: 1.0.0
+main: app.miyuki.miyukihopperfilter.MiyukiHopperFilter
+author: SOekd
+api-version: 1.16

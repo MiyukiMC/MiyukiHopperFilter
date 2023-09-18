@@ -1,0 +1,10 @@
+
+
+# Set the modes that will allow filtering.
+# If you activate the blacklist, it will only work when the player rotates the item from the itemframe.
+modes:
+  blacklist: true
+  whitelist: true
+
+# If active, the itemframe placed in the chests will also serve as a filter.
+chest-filter: false
