@@ -101,6 +101,16 @@ public class HopperFilterListener implements Listener {
                     .build();
         }
 
+        if (chestFilterEnabled) {
+            if (target.getType() != Material.HOPPER
+                    && target.getType() != Material.CHEST
+                    && target.getType() != Material.TRAPPED_CHEST)
+                return Collections.emptyList();
+        } else {
+            if (target.getType() != Material.HOPPER)
+                return Collections.emptyList();
+        }
+
         return target.getWorld().getNearbyEntities(target.getLocation(), 2, 1, 2, entity -> entity.getType() == EntityType.ITEM_FRAME)
                 .stream()
                 .map(ItemFrame.class::cast)
